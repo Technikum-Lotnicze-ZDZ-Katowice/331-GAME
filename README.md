@@ -1,6 +1,6 @@
 # 331-GAME
 
-1. GDD
+1. GDD - Game Design Document
 2. Game loop
 3. Canvas
 
