@@ -1,8 +1,35 @@
 # 331-GAME
 
 1. GDD - Game Design Document
-2. Game loop
-3. Canvas
+
+## Hangman
+1. Wstęp:
+
+Gra logiczna polegająca na odgadywaniu pełnej treści frazy z puli fraz. Odgadywanie odbywa się w turach odejmujących punkty za niepoprawną odpowiedź. Niepoprawne podpowiedzi generują (rysują) "wisielca" aż do przegrania po uzyskaniu max. ilości punktów karnych.
+
+2. Przebieg gry:
+
+- Po uruchomieniu gry losowana jest fraza (losowość) ze tablicy tekstów.
+- Wyświetlane są miejsca do wpisania znaków (input)
+- Każde wpisanie sprawdza poprawność wpisanego znaku.
+- Jeśli poprawnie to możeby wybierać następnyu znak, a jeśli nieopoprawnie to pole input jest czyszczone a odejmownie punktów jest ilustrowane usupoełnieniem obrazu "wisielca"
+- przekroczenie limitu punktów karnych (7) powoduje porażkę, a odgadnięcie frazy zwycięstwo i możliwość zagania ponownego
+- plansza końcowa (GAME OVER lub GRATULACJE)
+
+3. Środki techniczne:
+- grafiki (części ciała)
+- inputs
+- buttons
+
+4. Layout (projekt graficzny)
+
+   
+6. Game loop
+   - START
+   - GAMEPLAY event - kepress
+   - GEME OVER / CONGRATS
+   
+8. Canvas
 
 ### Links
 https://spicyyoghurt.com/tutorials/html5-javascript-game-development/create-a-proper-game-loop-with-requestanimationframe
