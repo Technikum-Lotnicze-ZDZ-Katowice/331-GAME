@@ -32,6 +32,7 @@ Gra logiczna polegająca na odgadywaniu pełnej treści frazy z puli fraz. Odgad
 8. Canvas
 
 ### Links
+
 The ultimate introduction to Pygame - https://www.youtube.com/watch?v=AY9MnQ4x3zk
 
 https://spicyyoghurt.com/tutorials/html5-javascript-game-development/create-a-proper-game-loop-with-requestanimationframe
@@ -39,3 +40,5 @@ https://spicyyoghurt.com/tutorials/html5-javascript-game-development/create-a-pr
 https://www.geeksforgeeks.org/simple-tic-tac-toe-game-using-javascript/
 
 https://betterprogramming.pub/create-tic-tac-toe-with-html-and-javascript-ea1c245a9f1f
+
+https://github.com/Lunakepio/Mario-Kart-3.js/tree/main/src
