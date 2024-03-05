@@ -45,3 +45,5 @@ https://betterprogramming.pub/create-tic-tac-toe-with-html-and-javascript-ea1c24
 
 https://github.com/Lunakepio/Mario-Kart-3.js/tree/main/src
 
+Remove from array - https://www.geeksforgeeks.org/remove-elements-from-a-javascript-array/
+
