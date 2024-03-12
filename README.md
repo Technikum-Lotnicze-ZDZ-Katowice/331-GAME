@@ -1,6 +1,6 @@
 # 331-GAME
 
-![GAME%20LOOP.png](GAME LOOP)
+!(GAME LOOP)[GAME%20LOOP.png]
 
 1. GDD - Game Design Document
 
