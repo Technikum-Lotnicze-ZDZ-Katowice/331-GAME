@@ -99,11 +99,13 @@ Gra logiczna polegająca na odgadywaniu pełnej treści frazy z puli fraz. Odgad
         endScreen.style.display = "none";
         startScreen.style.display = "block";
       }
+
       function startGame() {
         console.log("START GAME");
         startScreen.style.display = "none";
         board.style.display = "block";
       }
+
       function gameLoop() {
         console.log("GAME LOOP");
         endGame();
