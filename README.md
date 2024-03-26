@@ -32,7 +32,10 @@ Gra logiczna polegająca na odgadywaniu pełnej treści frazy z puli fraz. Odgad
    - GEME OVER / CONGRATS
 
 ```html
-...<style>
+...
+
+
+<style>
       .center {
         position: absolute;
         top: 50%;
@@ -129,6 +132,8 @@ Gra logiczna polegająca na odgadywaniu pełnej treści frazy z puli fraz. Odgad
         endScreen.style.display = "block";
       }
     </script>
+
+
 ...
 
 ```
