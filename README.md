@@ -80,8 +80,6 @@ Gra logiczna polegająca na odgadywaniu pełnej treści frazy z puli fraz. Odgad
       const btn2 = document.getElementById("btn2");
       const btnEnd = document.getElementById("btnEnd");
 
-      console.log();
-
       btnStart.addEventListener("click", startGame);
       btn1.addEventListener("click", checkGame);
       btn2.addEventListener("click", checkGame);
