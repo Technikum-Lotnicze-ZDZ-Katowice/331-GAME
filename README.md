@@ -32,8 +32,7 @@ Gra logiczna polegająca na odgadywaniu pełnej treści frazy z puli fraz. Odgad
    - GEME OVER / CONGRATS
 
 ```html
-...
-    <style>
+...<style>
       .center {
         position: absolute;
         top: 50%;
@@ -53,7 +52,7 @@ Gra logiczna polegająca na odgadywaniu pełnej treści frazy z puli fraz. Odgad
     </style>
   </head>
   <body>
-    <div class="center" id="startscreen">
+    <div class="center" id="startScreen">
       <h1>EKRAN STARTOWY</h1>
       <button id="btnStart">START</button>
     </div>
@@ -62,26 +61,74 @@ Gra logiczna polegająca na odgadywaniu pełnej treści frazy z puli fraz. Odgad
       <button id="btn1">BTN 1</button>
       <button id="btn2">BTN 2</button>
     </div>
-    <div class="center" id="endscreen">
+    <div class="center" id="endScreen">
       <h1>EKRAN KOŃCOWY</h1>
       <div id="score"></div>
       <button id="btnEnd">SPRÓBUJ JESZCZE RAZ</button>
     </div>
     <script>
-      const btnStart = document.getElementById(btnStart);
-      const btn1 = document.getElementById(btn1);
-      const btn2 = document.getElementById(btn2);
-      const btnEnd = document.getElementById(btnEnd);
+      const startscreen = document.getElementById("startscreen");
+      const board = document.getElementById("board");
+      const endscrteen = document.getElementById("endscrteen");
+      const score = document.getElementById("score");
+
+      const btnStart = document.getElementById("btnStart");
+      const btn1 = document.getElementById("btn1");
+      const btn2 = document.getElementById("btn2");
+      const btnEnd = document.getElementById("btnEnd");
+
+      console.log();
 
       btnStart.addEventListener("click", startGame);
-      btn1.addEventListener("click", endGame);
-      btn2.addEventListener("click", endGame);
+      btn1.addEventListener("click", checkGame);
+      btn2.addEventListener("click", checkGame);
       btnEnd.addEventListener("click", prepareGame);
 
-      function prepareGame() {...}
-      function startGame() {...}
-      function gameLoop() {...}
-      function endGame() {...}
+      let state = 0;
+      let pkt = 0;
+      let messages = ["Gratulacje, Wygrałeś!", "GAME OVER, try again"];
+
+      prepareGame();
+
+      function prepareGame() {
+        console.log("PREPARE GAME");
+        state = 0;
+        pkt = 0;
+        board.style.display = "none";
+        endScreen.style.display = "none";
+        startScreen.style.display = "block";
+      }
+      function startGame() {
+        console.log("START GAME");
+        startScreen.style.display = "none";
+        board.style.display = "block";
+      }
+      function gameLoop() {
+        console.log("GAME LOOP");
+        endGame();
+      }
+
+      function checkGame(event) {
+        if (event.target.id === "btn1") {
+          pkt = 1;
+        } else if (event.target.id === "btn2") {
+          pkt = 2;
+        }
+        gameLoop();
+      }
+
+      function endGame() {
+        if (pkt === 1) {
+          console.log("WIN");
+          score.innerText = messages[0];
+        } else if (pkt === 2) {
+          console.log("LOSE");
+          score.innerText = messages[1];
+        }
+        board.style.display = "none";
+        endScreen.style.display = "block";
+      }
+    </script>
 ...
 
 ```
