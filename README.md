@@ -68,15 +68,20 @@ Gra logiczna polegająca na odgadywaniu pełnej treści frazy z puli fraz. Odgad
       <button id="btnEnd">SPRÓBUJ JESZCZE RAZ</button>
     </div>
     <script>
-      const startscreen = document.getElementById("startscreen");
-      const board = document.getElementById("board");
-      const endscrteen = document.getElementById("endscrteen");
-      const score = document.getElementById("score");
-
       const btnStart = document.getElementById(btnStart);
       const btn1 = document.getElementById(btn1);
       const btn2 = document.getElementById(btn2);
-    </script>
+      const btnEnd = document.getElementById(btnEnd);
+
+      btnStart.addEventListener("click", startGame);
+      btn1.addEventListener("click", endGame);
+      btn2.addEventListener("click", endGame);
+      btnEnd.addEventListener("click", prepareGame);
+
+      function prepareGame() {...}
+      function startGame() {...}
+      function gameLoop() {...}
+      function endGame() {...}
 ...
 
 ```
