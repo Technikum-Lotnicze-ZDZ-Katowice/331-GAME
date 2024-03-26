@@ -30,8 +30,66 @@ Gra logiczna polegająca na odgadywaniu pełnej treści frazy z puli fraz. Odgad
    - START
    - GAMEPLAY event - kepress
    - GEME OVER / CONGRATS
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: gray;
+        border-radius: 10px;
+        padding: 3em;
+        text-align: center;
+      }
+      #board {
+        display: none;
+      }
+      #endscreen {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center" id="startscreen">
+      <h1>EKRAN STARTOWY</h1>
+      <button id="btnStart">START</button>
+    </div>
+    <div class="center" id="board">
+      <h1>PLANSZA GRY</h1>
+      <button id="btn1">BTN 1</button>
+      <button id="btn2">BTN 2</button>
+    </div>
+    <div class="center" id="endscreen">
+      <h1>EKRAN KOŃCOWY</h1>
+      <div id="score"></div>
+      <button id="btnEnd">SPRÓBUJ JESZCZE RAZ</button>
+    </div>
+    <script>
+      const startscreen = document.getElementById("startscreen");
+      const board = document.getElementById("board");
+      const endscrteen = document.getElementById("endscrteen");
+      const score = document.getElementById("score");
+
+      const btnStart = document.getElementById(btnStart);
+      const btn1 = document.getElementById(btn1);
+      const btn2 = document.getElementById(btn2);
+    </script>
+  </body>
+</html>
+
+```
    
 8. Canvas
+
+
 
 ### Links
 
